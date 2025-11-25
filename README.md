@@ -53,6 +53,9 @@ README.md
 - Designing modern UI quickly using framework CSS
 - Making a layout responsive and visually balanced
 
+## Live Site
+ https://shreyah-7.github.io/TechBlog/
+
 ## 📌 Sample Bootstrap Components Used
 
 Navbar:
