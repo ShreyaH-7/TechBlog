@@ -55,10 +55,3 @@ README.md
 
 ## Live Site
  https://shreyah-7.github.io/TechBlog/
-
-## 📌 Sample Bootstrap Components Used
-
-Navbar:
-
-```html
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
