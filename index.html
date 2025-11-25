@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tech Blog</title>
+
+  <!-- BOOTSTRAP -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- ICONS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" />
+
+  <style>
+    .card:hover {
+      transform: translateY(-4px);
+      transition: 0.25s ease-in-out;
+      box-shadow: 0 8px 18px rgba(0,0,0,0.15);
+    }
+    .blog-title:hover {
+      color: #0d6efd;
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body class="bg-light">
+
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+    <div class="container">
+      <a class="navbar-brand fw-bold" href="#"><i class="bi bi-journal-code"></i> TechBlog</a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navMenu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div id="navMenu" class="collapse navbar-collapse">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link active" href="#">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Articles</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Tutorials</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+        <button class="btn btn-outline-light ms-3"><i class="bi bi-search"></i></button>
+      </div>
+    </div>
+  </nav>
+
+
+  <!-- HERO -->
+  <section class="py-5 text-center bg-white shadow-sm">
+    <div class="container">
+      <h1 class="display-5 fw-bold">Welcome to TechBlog</h1>
+      <p class="lead text-muted">Articles on Web Development, UI Design, Programming & Tech.</p>
+    </div>
+  </section>
+
+
+  <!-- CONTENT -->
+  <div class="container py-5">
+    <div class="row g-4">
+
+      <!-- BLOG CARDS -->
+      <div class="col-lg-8">
+        <div class="row g-4">
+
+          <!-- CARD 1 -->
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm">
+              <img src="https://picsum.photos/seed/bootstrap/400/250" class="card-img-top">
+              <div class="card-body">
+                <h5 class="blog-title">Mastering Bootstrap 5</h5>
+                <p class="text-muted small mb-2"><i class="bi bi-calendar"></i> Jan 2025</p>
+                <p>Bootstrap helps build responsive UI faster with pre-designed components.</p>
+                <a href="#" class="btn btn-primary btn-sm">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2 -->
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm">
+              <img src="https://picsum.photos/seed/javascript/400/250" class="card-img-top">
+              <div class="card-body">
+                <h5 class="blog-title">JavaScript Async Guide</h5>
+                <p class="text-muted small mb-2"><i class="bi bi-calendar"></i> Feb 2025</p>
+                <p>Promises, async/await and how to handle async operations in JS.</p>
+                <a href="#" class="btn btn-primary btn-sm">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3 -->
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm">
+              <img src="https://picsum.photos/seed/layout/400/250" class="card-img-top">
+              <div class="card-body">
+                <h5 class="blog-title">CSS Grid vs Flexbox</h5>
+                <p class="text-muted small mb-2"><i class="bi bi-calendar"></i> Mar 2025</p>
+                <p>Which one to use? Real examples comparing layout designs.</p>
+                <a href="#" class="btn btn-primary btn-sm">Read more</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 4 -->
+          <div class="col-md-6">
+            <div class="card border-0 shadow-sm">
+              <img src="https://picsum.photos/seed/react/400/250" class="card-img-top">
+              <div class="card-body">
+                <h5 class="blog-title">Learning React Hooks</h5>
+                <p class="text-muted small mb-2"><i class="bi bi-calendar"></i> Apr 2025</p>
+                <p>A beginner-friendly guide to useState, useEffect, and custom hooks.</p>
+                <a href="#" class="btn btn-primary btn-sm">Read more</a>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+
+      <!-- SIDEBAR -->
+      <div class="col-lg-4">
+
+        <!-- SEARCH -->
+        <div class="p-3 bg-white shadow-sm rounded mb-4">
+          <h5 class="fw-bold"><i class="bi bi-search"></i> Search</h5>
+          <input type="text" class="form-control mt-2" placeholder="Search posts...">
+        </div>
+
+        <!-- TAGS -->
+        <div class="p-3 bg-white shadow-sm rounded mb-4">
+          <h5 class="fw-bold"><i class="bi bi-tags"></i> Popular Topics</h5>
+          <div class="mt-2">
+            <span class="badge bg-primary me-1">HTML</span>
+            <span class="badge bg-secondary me-1">CSS</span>
+            <span class="badge bg-success me-1">JavaScript</span>
+            <span class="badge bg-warning text-dark me-1">React</span>
+            <span class="badge bg-dark me-1">Node</span>
+          </div>
+        </div>
+
+        <!-- SUBSCRIBE -->
+        <div class="p-3 bg-white shadow-sm rounded">
+          <h5 class="fw-bold"><i class="bi bi-envelope"></i> Subscribe</h5>
+          <p class="small">Get email updates on new posts.</p>
+          <input type="email" class="form-control mb-2" placeholder="Your email">
+          <button class="btn btn-primary w-100 btn-sm">Subscribe</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-dark text-light py-4 mt-5">
+    <div class="container text-center">
+      <div class="mb-2">Follow us:</div>
+
+      <div class="d-flex justify-content-center gap-3 mb-3 fs-4">
+        <a href="#" class="text-light"><i class="bi bi-facebook"></i></a>
+        <a href="#" class="text-light"><i class="bi bi-instagram"></i></a>
+        <a href="#" class="text-light"><i class="bi bi-twitter"></i></a>
+        <a href="#" class="text-light"><i class="bi bi-linkedin"></i></a>
+      </div>
+
+      <div class="small">© 2025 TechBlog(Created By Shreya). All rights reserved.</div>
+    </div>
+  </footer>
+
+
+  <!-- BOOTSTRAP JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
