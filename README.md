@@ -1,4 +1,4 @@
-# Simple Blog Layout using Bootstrap 5
+<img width="1857" height="907" alt="Screenshot 2025-12-10 202227" src="https://github.com/user-attachments/assets/066b4663-9995-4aa9-bc0e-5e14c5183407" /># Simple Blog Layout using Bootstrap 5
 
 This project is a responsive blog page built using Bootstrap 5 CDN as part of the front-end UI development task.  
 The webpage includes a navbar, hero section, blog cards, sidebar widgets, and a footer.  
@@ -55,3 +55,5 @@ README.md
 
 ## Live Site
  https://shreyah-7.github.io/TechBlog/
+
+
